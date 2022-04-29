@@ -1,0 +1,268 @@
+<html>
+	<head>
+		<title> Tree </title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="Styling2.css">
+		<script>
+			function myFunction() {
+				document.getElementById("changeColor").style.color = "green";
+			}
+			function submitAlert(){
+				window.alert("You are submit this form in: \n"+ Date());
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<div class="header">
+			<h1  style="text-align: center"> Tree </h1>
+		</div>
+		
+		<div class="row">
+			<div class="col-3 photo">
+				<img src="images/tree1.jpg" alt="picture of tree1 not found">
+			</div>
+			
+			<div class="col-9">
+				<h1>Introduction</h1>
+				<p>In botany, a tree is a perennial plant with an elongated stem, or trunk,
+			supporting branches and leaves in most species. In some usages, the definition of a tree may be narrower,
+			including only woody plants with secondary growth, plants that are usable as lumber or plants above a specified height.
+			In wider definitions, the taller palms, tree ferns, bananas, and bamboos are also trees.
+			Trees are not a taxonomic group but include a variety of plant species that have independently evolved a trunk and branches as a way to tower above other plants to compete for sunlight.
+			Trees tend to be long-lived,
+			some reaching several thousand years old.
+			Trees have been in existence for 370 million years.
+			It is estimated that there are some three trillion mature trees in the world.
+			<br><br>
+			A tree typically has many secondary branches supported clear of the ground by the trunk.
+			This trunk typically contains woody tissue for strength, and vascular tissue to carry materials from one part of the tree to another.
+			For most trees it is surrounded by a layer of bark which serves as a protective barrier.
+			Below the ground, the roots branch and spread out widely;
+			they serve to anchor the tree and extract moisture and nutrients from the soil.
+			Above ground, the branches divide into smaller branches and shoots.
+			The shoots typically bear leaves,
+			which capture light energy and convert it into sugars by photosynthesis, providing the food for the tree's growth and development.
+			<br><br>
+			Trees usually reproduce using seeds. Flowers and fruit may be present, but some trees, such as conifers, instead have pollen cones and seed cones.
+			Palms, bananas, and bamboos also produce seeds, but tree ferns produce spores instead.
+			<br><br>
+			Trees play a significant role in reducing erosion and moderating the climate. They remove carbon dioxide from the atmosphere and store large quantities of carbon in their tissues.
+			Trees and forests provide a habitat for many species of animals and plants.
+			Tropical rainforests are among the most biodiverse habitats in the world.
+			Trees provide shade and shelter, timber for construction, fuel for cooking and heating, and fruit for food as well as having many other uses.
+			In parts of the world, forests are shrinking as trees are cleared to increase the amount of land available for agriculture. Because of their longevity and usefulness, 
+			trees have always been revered, with sacred groves in various cultures, and they play a role in many of the world's mythologies.
+			</p>
+			</div>
+		</div>
+		
+		<h2> More Information </h2>
+		<table border="">
+			<tr>
+				<th colspan="2" style="width:500px"> <h2>Parts</h2> </th>
+				<th colspan="2" style="width:500px"> <h2>Uses</h2> </th>
+			</tr>
+			<tr>
+				<td> <h3> <a href="#Roots"> Roots </a></h3></td>
+				<td> <h3> <a href="#Leaves">Leaves</a></h3></td>
+				<td> <h3> <a href="#Food">  Food  </a></h3></td>
+				<td> <h3> <a href="#Fuel">  Fuel  </a></h3></td>
+			</tr>
+		</table>
+		
+		<!-- here in next line, i make list using javaScript -->
+		<p id = "listhere"></p>
+		<script>
+			var list = ["watch video","give me your feedback"];
+			
+			str_list = "<ul>";
+			for(var i =0; i< list.length;i++){
+				str_list += "<li>";
+				if(i==0)
+					str_list += "<a href='#watchvideo'>"+list[0]+"</a>";
+				else
+					str_list += "<a href='#feedback'>"+list[1]+"</a>";
+				str_list += "</li></br>";
+			}
+			str_list += "</ul>"
+			document.getElementById("listhere").innerHTML = str_list;
+		</script>
+		
+		<div class="header">
+			<h1> <a id="Roots">Roots</a> </h1>
+		</div>
+		
+		<div class="row">
+			<div class="col-3 photo">
+				<img src="images/root1.jpg" alt="picture of root1 not found"> 
+			</div>
+			<div class="col-9">
+				<p>The roots of a tree serve to anchor it to the ground and gather water and nutrients to transfer to all parts of the tree.
+			They are also used for reproduction, defence, survival, energy storage and many other purposes. 
+			The radicle or embryonic root is the first part of a seedling to emerge from the seed during the process of germination.
+			This develops into a taproot which goes straight downwards. 
+			Within a few weeks lateral roots branch out of the side of this and grow horizontally through the upper layers of the soil. In most trees, 
+			the taproot eventually withers away and the wide-spreading laterals remain. Near the tip of the finer roots are single cell root hairs.
+			These are in immediate contact with the soil particles and can absorb water and nutrients such as potassium in solution. The roots require oxygen to respire and only a few species such as mangroves and the pond cypress (Taxodium ascendens) can live in permanently waterlogged soil.
+			<br><br>
+			In the soil, the roots encounter the hyphae of fungi. Many of these are known as mycorrhiza and form a mutualistic relationship with the tree roots.
+			Some are specific to a single tree species, which will not flourish in the absence of its mycorrhizal associate. Others are generalists and associate with many species.
+			The tree acquires minerals such as phosphorus from the fungus, while the fungus obtains the carbohydrate products of photosynthesis from the tree.
+			The hyphae of the fungus can link different trees and a network is formed, transferring nutrients and signals from one place to another.
+			The fungus promotes growth of the roots and helps protect the trees against predators and pathogens.
+			It can also limit damage done to a tree by pollution as the fungus accumulate heavy metals within its tissues. Fossil evidence shows that roots have been associated with mycorrhizal fungi since the early Paleozoic,
+			four hundred million years ago, when the first vascular plants colonised dry land.
+				</p>
+			</div>
+		</div>
+		<br><br>
+		
+		<div class="header">
+			<h1> <a id="Leaves">Leaves</a> </h1>
+		</div>
+		
+		<div class="row">
+			<div class="col-3 photo">
+				<img src="images/leave2.jpg" alt="picture of leave2 not found">
+			</div>
+			<div class="col-9">
+				<p>Leaves are structures specialised for photosynthesis and are arranged on the tree in such a way as to maximise their exposure to light without shading each other.They are an important investment by the tree and may be thorny or contain phytoliths, lignins, tannins or poisons to discourage herbivory. 
+			Trees have evolved leaves in a wide range of shapes and sizes, in response to environmental pressures including climate and predation. They can be broad or needle-like, simple or compound, lobed or entire, smooth or hairy, delicate or tough, deciduous or evergreen.
+			<br><br>The needles of coniferous trees are compact but are structurally similar to those of broad-leaved trees. They are adapted for life in environments where resources are low or water is scarce.
+			Frozen ground may limit water availability and conifers are often found in colder places at higher altitudes and higher latitudes than broad leaved trees. In conifers such as fir trees, the branches hang down at an angle to the trunk, enabling them to shed snow. In contrast, broad leaved trees in temperate regions deal with winter weather by shedding their leaves.
+			When the days get shorter and the temperature begins to decrease, the leaves no longer make new chlorophyll and the red and yellow pigments already present in the blades become apparent.
+			Synthesis in the leaf of a plant hormone called auxin also ceases.<br><br><br> This causes the cells at the junction of the petiole and the twig to weaken until the joint breaks and the leaf floats to the ground.
+			In tropical and subtropical regions, many trees keep their leaves all year round. Individual leaves may fall intermittently and be replaced by new growth but most leaves remain intact for some time.
+			Other tropical species and those in arid regions may shed all their leaves annually, such as at the start of the dry season.
+			Many deciduous trees flower before the new leaves emerge.
+			A few trees do not have true leaves but instead have structures with similar external appearance such as Phylloclades – modified stem structures – as seen in the genus Phyllocladus.
+				</p>
+			</div>
+		</div>
+		<br></br>
+		
+		<div class="header">
+			<h1> <a id="Food"> Food </a> </h1>
+		</div>
+		
+		<div class="row">
+			<div class="col-3 photo">
+				<img src="images/food1.jpg" alt="picture of food1 not found" >
+			</div>
+			<div class="col-9">
+				<p>Trees are the source of many of the world's best known fleshy fruits.
+			Apples, pears, plums, cherries and citrus are all grown commercially in temperate climates and a wide range of edible fruits are found in the tropics. 
+			Other commercially important fruit include dates, figs and olives.
+			Palm oil is obtained from the fruits of the oil palm (Elaeis guineensis). 
+			The fruits of the cocoa tree (Theobroma cacao) are used to make cocoa and chocolate and the berries of coffee trees, Coffea arabica and Coffea canephora, are processed to extract the coffee beans. 
+			In many rural areas of the world, fruit is gathered from forest trees for consumption.
+			Many trees bear edible nuts which can loosely be described as being large, oily kernels found inside a hard shell.
+			These include coconuts (Cocos nucifera), Brazil nuts (Bertholletia excelsa), pecans (Carya illinoinensis), hazel nuts (Corylus), almonds (Prunus dulcis), walnuts (Juglans regia), pistachios (Pistacia vera) and many others.
+			They are high in nutritive value and contain high-quality protein, 
+			vitamins and minerals as well as dietary fibre. A variety of nut oils are extracted by pressing for culinary use;
+			some such as walnut, pistachio and hazelnut oils are prized for their distinctive flavours, but they tend to spoil quickly.
+				</p>
+			</div>
+		</div>
+		<br><br>
+		
+		<div class="header">
+			<h1> <a id="Fuel"> Fuel </a> </h1>
+		</div>
+		
+		<div class="row">
+			<div class="col-3 photo">
+				<img src="images/fuel1.jpg"  alt="picture of fuel1 not found"> 
+			</div>
+			<div class="col-9">
+				<p>Wood has traditionally been used for fuel, especially in rural areas.
+			In less developed nations it may be the only fuel available and collecting firewood is often a time-consuming task as it becomes necessary to travel further and further afield in the search for fuel.
+			It is often burned inefficiently on an open fire.
+			In more developed countries other fuels are available and burning wood is a choice rather than a necessity.
+			Modern wood-burning stoves are very fuel efficient and new products such as wood pellets are available to burn.
+			<br><br>
+			Charcoal can be made by slow pyrolysis of wood by heating it in the absence of air in a kiln.
+			The carefully stacked branches, often oak, are burned with a very limited amount of air.
+			The process of converting them into charcoal takes about fifteen hours. 
+			Charcoal is used as a fuel in barbecues and by blacksmiths and has many industrial and other uses.
+				</p>
+			</div>
+		</div>
+		<br><br>
+		
+		<hr>
+		<h1> <a id="watchvideo">Video</a> </h1>
+		<video controls autoplay>
+			<source src="images/the sound of leaves rustling in the breeze.mp4" type="video/mp4">
+			This Browser Can't show videos
+		</video>
+		<hr>
+
+		<!-- here in next line, i change the text color when you click on it, using javaScript -->
+		<h1 id="changeColor" onclick="myFunction()"> <a id="feedback" ></a> Give me your feedback </h1>
+		
+		<form action="">
+			<p>
+				Your Age Category?
+			</p>
+			<p>
+				<label><input type="radio" name="age" value="under20" checked="checked"/> 0-19 </label>
+				<label><input type="radio" name="age" value="20-35"  /> 20-35 </label>
+				<label><input type="radio" name="age" value="36-50"  /> 35-50 </label>
+				<label><input type="radio" name="age" value="over50" /> Over 50 </label>												
+			</p>
+			
+			<br>
+			<p>
+				what is your favorite part?
+			</p>
+			<p>
+				<label><input type="checkbox" name="favorite" value="introduction" checked="checked"/>An introduction</label>
+				<label><input type="checkbox" name="favorite" value="roots"/>Roots </label>
+				<label><input type="checkbox" name="favorite" value="leaves"/>Leaves</label>
+				<label><input type="checkbox" name="favorite" value="food"/>Food</label>
+				<label><input type="checkbox" name="favorite" value="fuel"/>Fuel</label>
+			</p>
+			<br>
+			<p>
+				Do you have any suggestions?
+			</p>
+			<p>
+				<textarea name="coment" rows="3" cols="40"> </textarea>
+			</p>
+			<p>
+				<!-- here in next line, i add alert to Html code when someone submit form; using javaScript -->
+				<input type="submit" value="Show Alert" onclick="submitAlert()"/>
+				<input type="reset" value="Reset Form"/>
+			</p>
+		</form>
+		<div class="footer">
+			<p>This page was written and designed by Farah Al-karrad.</p>
+		</div>
+		
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {
+							scrollFunction()
+						};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	</body>
+</html>
